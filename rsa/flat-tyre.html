@@ -41,7 +41,7 @@
       <p class="eyebrow" style="color:#ffb020">Dispatch status</p>
       <h3>20-25 min avg. arrival</h3>
       <p>Verified mechanic dispatched from the nearest FixMyCar garage. Live tracking link sent by SMS. Starting at <strong style="color:#fff">₹299</strong>.</p>
-      <a href="tel:+911800266990" class="btn btn-sos btn-block">📞 Request Flat Tyre</a>
+      <button type="button" class="btn btn-sos btn-block" onclick="openServiceForm('Flat Tyre')"><span data-icon="whatsapp" class="btn-icon"></span> Request Flat Tyre</button>
       <a href="../contact.html" class="btn btn-ghost btn-block" style="margin-top:10px;">Get a Quote</a>
     </aside>
   </div>
@@ -54,7 +54,7 @@
       <h2>You might also need</h2>
     </div>
     <div class="grid">
-      <div class="card"><span class="rt">SOS-01</span><h3>Battery Jumpstart</h3><p>24×7 roadside help</p><a class="card-link" href="../rsa/battery-jumpstart.html">View details →</a></div><div class="card"><span class="rt">SOS-03</span><h3>Instant Car Repair</h3><p>24×7 roadside help</p><a class="card-link" href="../rsa/instant-car-repair.html">View details →</a></div><div class="card"><span class="rt">SOS-04</span><h3>Key Lockout</h3><p>24×7 roadside help</p><a class="card-link" href="../rsa/key-lockout.html">View details →</a></div>
+      <div class="card"><div class="card-icon" data-icon="battery"></div><h3>Battery Jumpstart</h3><p>24×7 roadside help</p><div class="card-actions"><a class="card-link" href="../rsa/battery-jumpstart.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Battery Jumpstart')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div><div class="card"><div class="card-icon" data-icon="wrench"></div><h3>Instant Car Repair</h3><p>24×7 roadside help</p><div class="card-actions"><a class="card-link" href="../rsa/instant-car-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Instant Car Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div><div class="card"><div class="card-icon" data-icon="key"></div><h3>Key Lockout</h3><p>24×7 roadside help</p><div class="card-actions"><a class="card-link" href="../rsa/key-lockout.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Key Lockout')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
     </div>
   </div>
 </section>
@@ -63,11 +63,13 @@
   <div class="container">
     <h2>Stuck on the road right now?</h2>
     <p>Our nearest mechanic is already on standby.</p>
-    <a href="tel:+911800266990" class="btn btn-amber">📞 Call 1800-266-9900</a>
+    <a href="tel:+919281410305" class="btn btn-amber">Call +91 92814 10305</a>
   </div>
 </section>
 
 <div id="site-footer"></div>
+<script src="../js/icons.js"></script>
+<script src="../js/app.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/include.js"></script>
 </body>

@@ -13,27 +13,93 @@
 <div id="site-header"></div>
 
 <section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="eyebrow">Live dispatch network · Pan-India</p>
-      <h1>Stuck on the road?<br><em>Help is already on the way.</em></h1>
-      <p class="lead">FixMyCar connects you to a verified mechanic in minutes — for a flat tyre on the highway or a full engine diagnostic at home. Track arrival live, pay transparent prices.</p>
-      <div class="hero-actions">
-        <a href="tel:+911800266990" class="btn btn-sos">📞 Get Roadside Help Now</a>
-        <a href="/roadside-package.html" class="btn btn-ghost">View Roadside Packages</a>
-      </div>
+  <div class="container">
+    <p class="eyebrow">Live dispatch network · Pan-India</p>
+    <h1>Stuck on the road?<br><em>Help is already on the way.</em></h1>
+    <p class="lead">FixMyCar connects you to a verified mechanic in minutes — for a flat tyre on the highway or a full engine diagnostic at home. Track arrival live, pay transparent prices.</p>
+    <div class="hero-actions">
+      <a href="tel:+919281410305" class="btn btn-sos"><span data-icon="phone" class="btn-icon"></span> Get Roadside Help Now</a>
+      <a href="/roadside-package.html" class="btn btn-ghost">View Roadside Packages</a>
     </div>
-    <div class="dispatch-card">
-      <div class="dispatch-card__head">
-        <span>Dispatch Status</span>
-        <span style="color:#2fae60">● Live</span>
+
+    <div class="hero-split">
+      <div class="hero-slider">
+        <div class="hero-slide is-active">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#181c25"/>
+            <rect y="230" width="400" height="70" fill="#232833"/>
+            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
+            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="120" y="90" width="70" height="110" rx="6"/>
+              <path d="M137 90v-14h36v14"/>
+              <path d="M225 130l-20 22h30l-20 22"/>
+            </g>
+            <circle cx="155" cy="230" r="16" fill="#12151c" stroke="#8a93a3" stroke-width="3"/>
+            <circle cx="200" cy="150" r="70" fill="none" stroke="#e4483a" stroke-width="2" opacity=".35"/>
+          </svg>
+          <div class="hero-slide__caption">Battery Jumpstart · 22 min avg</div>
+        </div>
+        <div class="hero-slide">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#181c25"/>
+            <rect y="230" width="400" height="70" fill="#232833"/>
+            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
+            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="200" cy="150" r="60"/>
+              <circle cx="200" cy="150" r="24"/>
+              <path d="M200 90v18M200 192v18M140 150h18M242 150h18"/>
+            </g>
+          </svg>
+          <div class="hero-slide__caption">Flat Tyre Repair · On-spot fitment</div>
+        </div>
+        <div class="hero-slide">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#181c25"/>
+            <rect y="230" width="400" height="70" fill="#232833"/>
+            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
+            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M120 190v-70h60v70"/>
+              <path d="M180 150h35l30-30v55l-30-25h-35"/>
+              <circle cx="140" cy="200" r="15"/>
+              <circle cx="260" cy="200" r="15"/>
+            </g>
+          </svg>
+          <div class="hero-slide__caption">Towing Service · Flatbed, citywide</div>
+        </div>
+        <div class="hero-slide">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#181c25"/>
+            <rect y="230" width="400" height="70" fill="#232833"/>
+            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
+            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="130" y="110" width="90" height="80" rx="6"/>
+              <path d="M220 130h30l25-25v65l-25-20h-30"/>
+              <path d="M150 190v20M195 190v20"/>
+            </g>
+          </svg>
+          <div class="hero-slide__caption">Engine Diagnostic · On-site OBD scan</div>
+        </div>
+        <button type="button" class="hero-slider__prev" aria-label="Previous">‹</button>
+        <button type="button" class="hero-slider__next" aria-label="Next">›</button>
+        <div class="hero-slider__dots"></div>
       </div>
-      <div class="dispatch-eta">22<small>min avg. arrival</small></div>
-      <div class="dispatch-list">
-        <div><span>Nearest mechanic</span><b>2.4 km away</b></div>
-        <div><span>Active technicians</span><b>184 online</b></div>
-        <div><span>Coverage</span><b>38 cities</b></div>
-        <div><span>Service tonight</span><b>24×7 open</b></div>
+
+      <div class="hero-info">
+        <div class="hero-typing-line">Now dispatching for: <b id="heroTyping"></b><span class="cursor"></span></div>
+        <div class="hero-info-list">
+          <div class="hero-info-item">
+            <div class="card-icon" data-icon="battery"></div>
+            <div><h4>184 mechanics online</h4><p>Verified technicians on standby across 38 cities.</p></div>
+          </div>
+          <div class="hero-info-item">
+            <div class="card-icon" data-icon="tow-truck"></div>
+            <div><h4>22 min avg. arrival</h4><p>Live tracked dispatch, sent straight to your phone.</p></div>
+          </div>
+          <div class="hero-info-item">
+            <div class="card-icon" data-icon="wrench"></div>
+            <div><h4>Transparent pricing</h4><p>Upfront estimate before any work begins — no surprises.</p></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -56,12 +122,12 @@
       <p>Book a mechanic for standard repair and maintenance work — at a garage near you or at your doorstep.</p>
     </div>
     <div class="grid">
-      <div class="card"><span class="rt">RT-01</span><h3>Body Repair</h3><p>Dent removal, panel beating and colour-matched refinishing.</p><a class="card-link" href="/services/body-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">RT-02</span><h3>Brake Repair</h3><p>Pad replacement, disc resurfacing and full brake checks.</p><a class="card-link" href="/services/brake-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">RT-03</span><h3>Car AC Repair</h3><p>Gas refilling, compressor repair and cooling checks.</p><a class="card-link" href="/services/car-ac-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">RT-04</span><h3>Engine Diagnostic</h3><p>Computerised OBD scan to pinpoint check-engine faults.</p><a class="card-link" href="/services/engine-diagnostic.html">View details →</a></div>
-      <div class="card"><span class="rt">RT-05</span><h3>Wheel Alignment</h3><p>4-wheel computerised alignment and balancing.</p><a class="card-link" href="/services/wheel-alignment.html">View details →</a></div>
-      <div class="card"><span class="rt">RT-06</span><h3>Oil Change</h3><p>Engine oil and filter change with a multi-point check.</p><a class="card-link" href="/services/oil-change.html">View details →</a></div>
+      <div class="card"><div class="card-icon" data-icon="body-repair"></div><h3>Body Repair</h3><p>Dent removal, panel beating and colour-matched refinishing.</p><div class="card-actions"><a class="card-link" href="/services/body-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Body Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="brake-repair"></div><h3>Brake Repair</h3><p>Pad replacement, disc resurfacing and full brake checks.</p><div class="card-actions"><a class="card-link" href="/services/brake-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Brake Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="ac-repair"></div><h3>Car AC Repair</h3><p>Gas refilling, compressor repair and cooling checks.</p><div class="card-actions"><a class="card-link" href="/services/car-ac-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Car AC Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="engine-diagnostic"></div><h3>Engine Diagnostic</h3><p>Computerised OBD scan to pinpoint check-engine faults.</p><div class="card-actions"><a class="card-link" href="/services/engine-diagnostic.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Engine Diagnostic')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="wheel-alignment"></div><h3>Wheel Alignment</h3><p>4-wheel computerised alignment and balancing.</p><div class="card-actions"><a class="card-link" href="/services/wheel-alignment.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Wheel Alignment')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="oil-change"></div><h3>Oil Change</h3><p>Engine oil and filter change with a multi-point check.</p><div class="card-actions"><a class="card-link" href="/services/oil-change.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Oil Change')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
     </div>
   </div>
 </section>
@@ -74,14 +140,14 @@
       <p>Specialist care for luxury and performance marques, with OEM-grade parts and diagnostics.</p>
     </div>
     <div class="grid">
-      <div class="card"><span class="rt">★</span><h3>Audi Repair</h3><p>quattro drivetrain and TFSI engine specialists.</p><a class="card-link" href="/premium/audi-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Mercedes Repair</h3><p>AIRMATIC suspension and COMAND systems.</p><a class="card-link" href="/premium/mercedes-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>BMW Repair</h3><p>Engine, iDrive and run-flat tyre systems.</p><a class="card-link" href="/premium/bmw-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Jaguar Repair</h3><p>Aluminium body and electronic systems.</p><a class="card-link" href="/premium/jaguar-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Porsche Repair</h3><p>PDK gearbox and PASM suspension experts.</p><a class="card-link" href="/premium/porsche-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Bentley Repair</h3><p>Handcrafted interiors, W12/V8 engines.</p><a class="card-link" href="/premium/bentley-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Land Rover Repair</h3><p>Terrain-response and air suspension.</p><a class="card-link" href="/premium/land-rover-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">★</span><h3>Lexus Repair</h3><p>Hybrid drivetrain specialists.</p><a class="card-link" href="/premium/lexus-repair.html">View details →</a></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Audi Repair</h3><p>quattro drivetrain and TFSI engine specialists.</p><div class="card-actions"><a class="card-link" href="/premium/audi-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Audi Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Mercedes Repair</h3><p>AIRMATIC suspension and COMAND systems.</p><div class="card-actions"><a class="card-link" href="/premium/mercedes-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Mercedes Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>BMW Repair</h3><p>Engine, iDrive and run-flat tyre systems.</p><div class="card-actions"><a class="card-link" href="/premium/bmw-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('BMW Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Jaguar Repair</h3><p>Aluminium body and electronic systems.</p><div class="card-actions"><a class="card-link" href="/premium/jaguar-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Jaguar Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Porsche Repair</h3><p>PDK gearbox and PASM suspension experts.</p><div class="card-actions"><a class="card-link" href="/premium/porsche-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Porsche Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Bentley Repair</h3><p>Handcrafted interiors, W12/V8 engines.</p><div class="card-actions"><a class="card-link" href="/premium/bentley-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Bentley Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Land Rover Repair</h3><p>Terrain-response and air suspension.</p><div class="card-actions"><a class="card-link" href="/premium/land-rover-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Land Rover Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="premium-car"></div><h3>Lexus Repair</h3><p>Hybrid drivetrain specialists.</p><div class="card-actions"><a class="card-link" href="/premium/lexus-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Lexus Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
     </div>
   </div>
 </section>
@@ -94,12 +160,12 @@
       <p>Stranded anywhere? These services are dispatched immediately, day or night.</p>
     </div>
     <div class="grid">
-      <div class="card"><span class="rt">SOS-01</span><h3>Battery Jumpstart</h3><p>On-spot jumpstart and battery health check.</p><a class="card-link" href="/rsa/battery-jumpstart.html">View details →</a></div>
-      <div class="card"><span class="rt">SOS-02</span><h3>Flat Tyre</h3><p>Spare fitment or on-spot puncture repair.</p><a class="card-link" href="/rsa/flat-tyre.html">View details →</a></div>
-      <div class="card"><span class="rt">SOS-03</span><h3>Instant Car Repair</h3><p>Mobile mechanic for on-site minor fixes.</p><a class="card-link" href="/rsa/instant-car-repair.html">View details →</a></div>
-      <div class="card"><span class="rt">SOS-04</span><h3>Key Lockout</h3><p>Non-destructive lock opening, on the spot.</p><a class="card-link" href="/rsa/key-lockout.html">View details →</a></div>
-      <div class="card"><span class="rt">SOS-05</span><h3>Mechanical Fault</h3><p>On-site diagnosis for sudden breakdowns.</p><a class="card-link" href="/rsa/mechanical-fault.html">View details →</a></div>
-      <div class="card"><span class="rt">SOS-06</span><h3>Towing Services</h3><p>Flatbed towing to your preferred garage.</p><a class="card-link" href="/rsa/towing-services.html">View details →</a></div>
+      <div class="card"><div class="card-icon" data-icon="battery"></div><h3>Battery Jumpstart</h3><p>On-spot jumpstart and battery health check.</p><div class="card-actions"><a class="card-link" href="/rsa/battery-jumpstart.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Battery Jumpstart')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="tyre"></div><h3>Flat Tyre</h3><p>Spare fitment or on-spot puncture repair.</p><div class="card-actions"><a class="card-link" href="/rsa/flat-tyre.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Flat Tyre')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="wrench"></div><h3>Instant Car Repair</h3><p>Mobile mechanic for on-site minor fixes.</p><div class="card-actions"><a class="card-link" href="/rsa/instant-car-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Instant Car Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="key"></div><h3>Key Lockout</h3><p>Non-destructive lock opening, on the spot.</p><div class="card-actions"><a class="card-link" href="/rsa/key-lockout.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Key Lockout')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="alert"></div><h3>Mechanical Fault</h3><p>On-site diagnosis for sudden breakdowns.</p><div class="card-actions"><a class="card-link" href="/rsa/mechanical-fault.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Mechanical Fault')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      <div class="card"><div class="card-icon" data-icon="tow-truck"></div><h3>Towing Services</h3><p>Flatbed towing to your preferred garage.</p><div class="card-actions"><a class="card-link" href="/rsa/towing-services.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Towing Services')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
     </div>
   </div>
 </section>
@@ -123,11 +189,13 @@
   <div class="container">
     <h2>Don't wait on the shoulder of the road.</h2>
     <p>1200+ verified mechanics are on standby across 38 cities, right now.</p>
-    <a href="tel:+911800266990" class="btn btn-amber">📞 Call 1800-266-9900</a>
+    <a href="tel:+919281410305" class="btn btn-amber">Call +91 92814 10305</a>
   </div>
 </section>
 
 <div id="site-footer"></div>
+<script src="./js/icons.js"></script>
+<script src="./js/app.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/include.js"></script>
 </body>

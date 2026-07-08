@@ -29,5 +29,6 @@
       a.setAttribute("href", root + href.slice(1));
     });
     if (window.initNav) window.initNav();
+    if (window.FMC_INIT) window.FMC_INIT();
   });
 })();

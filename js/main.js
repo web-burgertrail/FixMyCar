@@ -7,7 +7,7 @@ window.initNav = function () {
     navToggle.addEventListener("click", () => {
       const isOpen = navMenu.classList.toggle("is-active");
       navToggle.setAttribute("aria-expanded", isOpen);
-      navToggle.textContent = isOpen ? "✕" : "☰";
+      document.body.style.overflow = isOpen ? "hidden" : "";
     });
   }
 

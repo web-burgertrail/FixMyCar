@@ -22,7 +22,7 @@
 <section class="section">
   <div class="container content-grid">
     <div class="form-card">
-      <form data-demo-form>
+      <form id="contactForm">
         <div class="form-row">
           <div class="field"><label for="name">Full Name</label><input id="name" type="text" placeholder="Your name" required></div>
           <div class="field"><label for="phone">Phone Number</label><input id="phone" type="tel" placeholder="+91 9XXXXXXXXX" required></div>
@@ -43,23 +43,53 @@
           <label for="msg">Message</label>
           <textarea id="msg" rows="4" placeholder="Tell us what's going on with your car"></textarea>
         </div>
-        <button type="submit" class="btn btn-sos btn-block">Send Request</button>
+        <button type="submit" class="btn btn-sos btn-block"><span data-icon="whatsapp" class="btn-icon"></span> Send Request on WhatsApp</button>
       </form>
     </div>
     <aside class="side-card">
       <h3>Prefer to call?</h3>
       <p>Our 24×7 helpline connects you directly to dispatch.</p>
-      <a href="tel:+911800266990" class="btn btn-amber btn-block">📞 1800-266-9900</a>
-      <p style="margin-top:18px;">✉️ <a href="mailto:support@fixmycar.in" style="color:#ffb020">support@fixmycar.in</a></p>
-      <p style="margin-top:6px;color:#c7cdd6;font-size:14px;">📍 Placeholder Address — 221B, MG Road, Banjara Hills, Hyderabad, Telangana 500034 <em style="display:block;color:#8a93a3;font-size:12px;font-style:normal;margin-top:4px;">(update with your real address)</em></p>
-      <p style="margin-top:18px;">Garage or mechanic wanting to join our network?</p>
-      <a href="https://fixmycar24.com/join-network" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Join FixMyCar Network</a>
+      <a href="tel:+919281410305" class="btn btn-amber btn-block"><span data-icon="phone" class="btn-icon"></span> +91 92814 10305</a>
+      <a href="https://wa.me/919281410305?text=Hi%20FixMyCar%2C%20I%20need%20help." target="_blank" rel="noopener" class="btn btn-ghost btn-block" style="margin-top:10px;"><span data-icon="whatsapp" class="btn-icon"></span> Chat on WhatsApp</a>
+      <p style="margin-top:18px;display:flex;align-items:center;gap:8px;"><span data-icon="mail" class="li-icon"></span><a href="mailto:support@fixmycar.in" style="color:#ffb020">support@fixmycar.in</a></p>
+      <p style="margin-top:6px;color:#c7cdd6;font-size:14px;display:flex;gap:8px;align-items:flex-start;"><span data-icon="pin" class="li-icon" style="margin-top:2px;"></span><span>Placeholder Address — 221B, MG Road, Banjara Hills, Hyderabad, Telangana 500034 <em style="display:block;color:#8a93a3;font-size:12px;font-style:normal;margin-top:4px;">(update with your real address)</em></span></p>
     </aside>
   </div>
 </section>
 
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Find us</p>
+      <h2>Our Location</h2>
+    </div>
+    <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid #e6e1d6;">
+      <iframe
+        src="https://www.google.com/maps?q=Banjara+Hills,+Hyderabad,+Telangana&output=embed"
+        width="100%" height="380" style="border:0;display:block;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="FixMyCar location map"></iframe>
+    </div>
+  </div>
+</section>
+
 <div id="site-footer"></div>
+<script src="./js/icons.js"></script>
+<script src="./js/app.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/include.js"></script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var name = document.getElementById("name").value.trim();
+  var phone = document.getElementById("phone").value.trim();
+  var city = document.getElementById("city").value.trim();
+  var service = document.getElementById("service").value;
+  var msg = document.getElementById("msg").value.trim();
+  var text = "Hi FixMyCar, I have an enquiry.%0AName: " + name +
+    "%0APhone: " + phone + "%0ACity: " + city + "%0AService: " + service +
+    (msg ? "%0AMessage: " + msg : "") + "%0A(sent via fixmycar website)";
+  window.open("https://wa.me/919281410305?text=" + text, "_blank", "noopener");
+});
+</script>
 </body>
 </html>
