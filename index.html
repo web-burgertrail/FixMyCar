@@ -14,93 +14,49 @@
 
 <section class="hero">
   <div class="container">
-    <p class="eyebrow">Live dispatch network · Pan-India</p>
-    <h1>Stuck on the road?<br><em>Help is already on the way.</em></h1>
-    <p class="lead">FixMyCar connects you to a verified mechanic in minutes — for a flat tyre on the highway or a full engine diagnostic at home. Track arrival live, pay transparent prices.</p>
+    <h1>24×7 Emergency<br><em>Roadside Assistance</em></h1>
+    <p class="lead" style="font-family:var(--font-display);text-transform:none;font-size:20px;color:var(--amber-400);font-weight:600;margin-bottom:14px;max-width:44ch;">Fast, trusted doorstep mechanics and towing services when you need them most.</p>
+    <p class="lead">FixMyCar provides quick roadside assistance including towing, battery jump-start, flat tyre replacement, lockout assistance, fuel delivery, and emergency mechanical support. Get verified technicians at your location with transparent pricing and fast response times.</p>
     <div class="hero-actions">
-      <a href="tel:+919281410305" class="btn btn-sos"><span data-icon="phone" class="btn-icon"></span> Get Roadside Help Now</a>
-      <a href="/roadside-package.html" class="btn btn-ghost">View Roadside Packages</a>
+      <button type="button" class="btn btn-sos" data-sos-trigger><span data-icon="phone" class="btn-icon"></span> Get Emergency Help</button>
+      <button type="button" class="btn btn-ghost" onclick="openServiceForm('Book a Mechanic')"><span data-icon="wrench" class="btn-icon"></span> Book a Mechanic</button>
     </div>
 
     <div class="hero-split">
       <div class="hero-slider">
         <div class="hero-slide is-active">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#181c25"/>
-            <rect y="230" width="400" height="70" fill="#232833"/>
-            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
-            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="120" y="90" width="70" height="110" rx="6"/>
-              <path d="M137 90v-14h36v14"/>
-              <path d="M225 130l-20 22h30l-20 22"/>
-            </g>
-            <circle cx="155" cy="230" r="16" fill="#12151c" stroke="#8a93a3" stroke-width="3"/>
-            <circle cx="200" cy="150" r="70" fill="none" stroke="#e4483a" stroke-width="2" opacity=".35"/>
-          </svg>
-          <div class="hero-slide__caption">Battery Jumpstart · 22 min avg</div>
+          <img src="https://images.pexels.com/photos/17429097/pexels-photo-17429097.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Customer receiving roadside assistance as their car is loaded onto a tow truck" loading="lazy">
+          <div class="hero-slide__caption">Roadside Assistance · Customer pickup</div>
         </div>
         <div class="hero-slide">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#181c25"/>
-            <rect y="230" width="400" height="70" fill="#232833"/>
-            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
-            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="200" cy="150" r="60"/>
-              <circle cx="200" cy="150" r="24"/>
-              <path d="M200 90v18M200 192v18M140 150h18M242 150h18"/>
-            </g>
-          </svg>
-          <div class="hero-slide__caption">Flat Tyre Repair · On-spot fitment</div>
+          <img src="https://images.pexels.com/photos/8478265/pexels-photo-8478265.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mechanic repairing a car engine at the roadside" loading="lazy">
+          <div class="hero-slide__caption">Roadside Mechanic · On-spot repair</div>
         </div>
         <div class="hero-slide">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#181c25"/>
-            <rect y="230" width="400" height="70" fill="#232833"/>
-            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
-            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M120 190v-70h60v70"/>
-              <path d="M180 150h35l30-30v55l-30-25h-35"/>
-              <circle cx="140" cy="200" r="15"/>
-              <circle cx="260" cy="200" r="15"/>
-            </g>
-          </svg>
-          <div class="hero-slide__caption">Towing Service · Flatbed, citywide</div>
+          <img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Technician changing a flat tyre" loading="lazy">
+          <div class="hero-slide__caption">Flat Tyre Assistance · On-spot fitment</div>
         </div>
         <div class="hero-slide">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#181c25"/>
-            <rect y="230" width="400" height="70" fill="#232833"/>
-            <rect y="255" width="400" height="6" fill="#ffb020" opacity=".6"/>
-            <g fill="none" stroke="#ffb020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="130" y="110" width="90" height="80" rx="6"/>
-              <path d="M220 130h30l25-25v65l-25-20h-30"/>
-              <path d="M150 190v20M195 190v20"/>
-            </g>
-          </svg>
-          <div class="hero-slide__caption">Engine Diagnostic · On-site OBD scan</div>
+          <img src="https://images.pexels.com/photos/10061763/pexels-photo-10061763.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car towing service on a flatbed" loading="lazy">
+          <div class="hero-slide__caption">Car Towing · Flatbed, citywide</div>
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.pexels.com/photos/4116225/pexels-photo-4116225.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mechanic performing engine diagnostics" loading="lazy">
+          <div class="hero-slide__caption">Engine Diagnostics · On-site scan</div>
         </div>
         <button type="button" class="hero-slider__prev" aria-label="Previous">‹</button>
         <button type="button" class="hero-slider__next" aria-label="Next">›</button>
         <div class="hero-slider__dots"></div>
       </div>
+    </div>
 
-      <div class="hero-info">
-        <div class="hero-typing-line">Now dispatching for: <b id="heroTyping"></b><span class="cursor"></span></div>
-        <div class="hero-info-list">
-          <div class="hero-info-item">
-            <div class="card-icon" data-icon="battery"></div>
-            <div><h4>184 mechanics online</h4><p>Verified technicians on standby across 38 cities.</p></div>
-          </div>
-          <div class="hero-info-item">
-            <div class="card-icon" data-icon="tow-truck"></div>
-            <div><h4>22 min avg. arrival</h4><p>Live tracked dispatch, sent straight to your phone.</p></div>
-          </div>
-          <div class="hero-info-item">
-            <div class="card-icon" data-icon="wrench"></div>
-            <div><h4>Transparent pricing</h4><p>Upfront estimate before any work begins — no surprises.</p></div>
-          </div>
-        </div>
-      </div>
+    <div class="hero-features">
+      <div class="glass-card"><span class="glass-check">✓</span> 24×7 Emergency Support</div>
+      <div class="glass-card"><span class="glass-check">✓</span> Verified Mechanics</div>
+      <div class="glass-card"><span class="glass-check">✓</span> Transparent Pricing</div>
+      <div class="glass-card"><span class="glass-check">✓</span> Fast Response</div>
+      <div class="glass-card"><span class="glass-check">✓</span> Doorstep Service</div>
+      <div class="glass-card"><span class="glass-check">✓</span> Genuine Spare Parts</div>
     </div>
   </div>
 </section>
@@ -117,17 +73,77 @@
 <section class="section" id="services">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Workshop-grade repairs</p>
-      <h2>Services</h2>
-      <p>Book a mechanic for standard repair and maintenance work — at a garage near you or at your doorstep.</p>
+      <p class="eyebrow">Doorstep &amp; roadside</p>
+      <h2>Our Services</h2>
+      <p>From a highway breakdown to a scheduled repair — one network, transparent pricing, fast dispatch.</p>
     </div>
     <div class="grid">
-      <div class="card"><div class="card-icon" data-icon="body-repair"></div><h3>Body Repair</h3><p>Dent removal, panel beating and colour-matched refinishing.</p><div class="card-actions"><a class="card-link" href="/services/body-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Body Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="brake-repair"></div><h3>Brake Repair</h3><p>Pad replacement, disc resurfacing and full brake checks.</p><div class="card-actions"><a class="card-link" href="/services/brake-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Brake Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="ac-repair"></div><h3>Car AC Repair</h3><p>Gas refilling, compressor repair and cooling checks.</p><div class="card-actions"><a class="card-link" href="/services/car-ac-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Car AC Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="engine-diagnostic"></div><h3>Engine Diagnostic</h3><p>Computerised OBD scan to pinpoint check-engine faults.</p><div class="card-actions"><a class="card-link" href="/services/engine-diagnostic.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Engine Diagnostic')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="wheel-alignment"></div><h3>Wheel Alignment</h3><p>4-wheel computerised alignment and balancing.</p><div class="card-actions"><a class="card-link" href="/services/wheel-alignment.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Wheel Alignment')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="oil-change"></div><h3>Oil Change</h3><p>Engine oil and filter change with a multi-point check.</p><div class="card-actions"><a class="card-link" href="/services/oil-change.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Oil Change')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/17429097/pexels-photo-17429097.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Car towing service" loading="lazy"><div class="card-icon" data-icon="tow-truck"></div></div>
+        <div class="card-media-pad"><h3>Car Towing</h3><p>Flatbed towing to your preferred garage or ours, GPS-tracked.</p><div class="card-actions"><a class="card-link" href="/rsa/towing-services.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Car Towing')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/10061763/pexels-photo-10061763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bike towing service" loading="lazy"><div class="card-icon" data-icon="bike"></div></div>
+        <div class="card-media-pad"><h3>Bike Towing</h3><p>Safe two-wheeler pickup and drop when your bike won't start.</p><div class="card-actions"><a class="card-link" href="/rsa/towing-services.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Bike Towing')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/6412695/pexels-photo-6412695.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Flat tyre roadside assistance" loading="lazy"><div class="card-icon" data-icon="tyre"></div></div>
+        <div class="card-media-pad"><h3>Flat Tyre</h3><p>Spare wheel fitment or on-spot puncture repair, wherever you are.</p><div class="card-actions"><a class="card-link" href="/rsa/flat-tyre.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Flat Tyre')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/4116225/pexels-photo-4116225.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Battery jumpstart service" loading="lazy"><div class="card-icon" data-icon="battery"></div></div>
+        <div class="card-media-pad"><h3>Battery Jump Start</h3><p>Dead battery? A mechanic reaches you with a jumpstart kit in minutes.</p><div class="card-actions"><a class="card-link" href="/rsa/battery-jumpstart.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Battery Jump Start')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/8478265/pexels-photo-8478265.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fuel delivery service" loading="lazy"><div class="card-icon" data-icon="fuel"></div></div>
+        <div class="card-media-pad"><h3>Fuel Delivery</h3><p>Run out of fuel on the road? Emergency fuel delivered to your location.</p><div class="card-actions"><a class="card-link" href="/contact.html">Get help →</a><button type="button" class="card-cta" onclick="openServiceForm('Fuel Delivery')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lockout assistance service" loading="lazy"><div class="card-icon" data-icon="key"></div></div>
+        <div class="card-media-pad"><h3>Lockout Assistance</h3><p>Locked your keys inside? Non-destructive lock opening, on the spot.</p><div class="card-actions"><a class="card-link" href="/rsa/key-lockout.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Lockout Assistance')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/8478265/pexels-photo-8478265.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Minor repairs service" loading="lazy"><div class="card-icon" data-icon="minor-repair"></div></div>
+        <div class="card-media-pad"><h3>Minor Repairs</h3><p>A mobile mechanic reaches your location for small fixes — no towing needed.</p><div class="card-actions"><a class="card-link" href="/rsa/instant-car-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Minor Repairs')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/4116225/pexels-photo-4116225.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Engine diagnostics service" loading="lazy"><div class="card-icon" data-icon="engine-diagnostic"></div></div>
+        <div class="card-media-pad"><h3>Engine Diagnostics</h3><p>Computerised OBD scan to pinpoint check-engine faults before they get costly.</p><div class="card-actions"><a class="card-link" href="/services/engine-diagnostic.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Engine Diagnostics')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/8478265/pexels-photo-8478265.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brake repair service" loading="lazy"><div class="card-icon" data-icon="brake-repair"></div></div>
+        <div class="card-media-pad"><h3>Brake Repair</h3><p>Pad replacement, disc resurfacing and full brake checks for safer stopping.</p><div class="card-actions"><a class="card-link" href="/services/brake-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Brake Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/4116225/pexels-photo-4116225.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Car AC repair service" loading="lazy"><div class="card-icon" data-icon="ac-repair"></div></div>
+        <div class="card-media-pad"><h3>AC Repair</h3><p>Gas refilling, compressor repair and full AC servicing to keep your cabin cool.</p><div class="card-actions"><a class="card-link" href="/services/car-ac-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Car AC Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/6412695/pexels-photo-6412695.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wheel alignment service" loading="lazy"><div class="card-icon" data-icon="wheel-alignment"></div></div>
+        <div class="card-media-pad"><h3>Wheel Alignment</h3><p>Computerised 4-wheel alignment and balancing for a straight, stable drive.</p><div class="card-actions"><a class="card-link" href="/services/wheel-alignment.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Wheel Alignment')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/8478265/pexels-photo-8478265.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Oil change service" loading="lazy"><div class="card-icon" data-icon="oil-change"></div></div>
+        <div class="card-media-pad"><h3>Oil Change</h3><p>Engine oil and filter change using OEM-grade or fully synthetic oil.</p><div class="card-actions"><a class="card-link" href="/services/oil-change.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Oil Change')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.pexels.com/photos/4116225/pexels-photo-4116225.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Car body repair service" loading="lazy"><div class="card-icon" data-icon="body-repair"></div></div>
+        <div class="card-media-pad"><h3>Body Repair</h3><p>Dent removal, panel beating and colour-matched refinishing.</p><div class="card-actions"><a class="card-link" href="/services/body-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Body Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -152,24 +168,6 @@
   </div>
 </section>
 
-<section class="section" id="rsa">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">24×7 emergency dispatch</p>
-      <h2>Roadside Assistance (RSA)</h2>
-      <p>Stranded anywhere? These services are dispatched immediately, day or night.</p>
-    </div>
-    <div class="grid">
-      <div class="card"><div class="card-icon" data-icon="battery"></div><h3>Battery Jumpstart</h3><p>On-spot jumpstart and battery health check.</p><div class="card-actions"><a class="card-link" href="/rsa/battery-jumpstart.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Battery Jumpstart')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="tyre"></div><h3>Flat Tyre</h3><p>Spare fitment or on-spot puncture repair.</p><div class="card-actions"><a class="card-link" href="/rsa/flat-tyre.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Flat Tyre')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="wrench"></div><h3>Instant Car Repair</h3><p>Mobile mechanic for on-site minor fixes.</p><div class="card-actions"><a class="card-link" href="/rsa/instant-car-repair.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Instant Car Repair')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="key"></div><h3>Key Lockout</h3><p>Non-destructive lock opening, on the spot.</p><div class="card-actions"><a class="card-link" href="/rsa/key-lockout.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Key Lockout')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="alert"></div><h3>Mechanical Fault</h3><p>On-site diagnosis for sudden breakdowns.</p><div class="card-actions"><a class="card-link" href="/rsa/mechanical-fault.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Mechanical Fault')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-      <div class="card"><div class="card-icon" data-icon="tow-truck"></div><h3>Towing Services</h3><p>Flatbed towing to your preferred garage.</p><div class="card-actions"><a class="card-link" href="/rsa/towing-services.html">View details →</a><button type="button" class="card-cta" onclick="openServiceForm('Towing Services')"><span data-icon="whatsapp" class="btn-icon"></span>Request</button></div></div>
-    </div>
-  </div>
-</section>
-
 <section class="section section-dark">
   <div class="container">
     <div class="section-head">
@@ -177,10 +175,33 @@
       <h2>From SOS to solved</h2>
     </div>
     <div class="steps">
-      <div class="step"><h4>Send an SOS</h4><p>Call, or request help from any service page — takes under a minute.</p></div>
+      <div class="step"><h4>Send an SOS</h4><p>Tap SOS Emergency, or request help from any service page — takes under a minute.</p></div>
       <div class="step"><h4>Get matched</h4><p>Nearest verified mechanic is assigned and dispatched to your location.</p></div>
-      <div class="step"><h4>Track live</h4><p>Follow the technician's arrival on a live tracking link sent by SMS.</p></div>
-      <div class="step"><h4>Pay transparently</h4><p>Upfront estimate before work begins — no surprise charges.</p></div>
+      <div class="step"><h4>Get a quote</h4><p>We inspect the issue and share a detailed estimate before any work begins.</p></div>
+      <div class="step"><h4>Pay transparently</h4><p>You approve the quote — no hidden charges, no surprises.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing-policy">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Honest, upfront pricing</p>
+      <h2>Transparent Pricing Policy</h2>
+      <p>Honest pricing with complete transparency before any work begins.</p>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card"><div class="policy-icon" data-icon="inspection"></div><div><h3>Doorstep Inspection</h3><p>A professional technician inspects your vehicle at your location before any repair is planned.</p></div></div>
+      <div class="policy-card"><div class="policy-icon" data-icon="clock"></div><div><h3>Visit Fee Applies</h3><p>A standard inspection/visit fee applies for every doorstep or roadside call-out.</p></div></div>
+      <div class="policy-card"><div class="policy-icon" data-icon="quote"></div><div><h3>Detailed Quotation</h3><p>After inspection, we share a detailed quotation before starting any work.</p></div></div>
+      <div class="policy-card"><div class="policy-icon" data-icon="split-charge"></div><div><h3>Labour Charged Separately</h3><p>Labour charges are calculated separately based on the repair required.</p></div></div>
+      <div class="policy-card"><div class="policy-icon" data-icon="parts"></div><div><h3>Spare Parts Billed Separately</h3><p>Spare parts used in the repair are charged separately and shown on your quote.</p></div></div>
+      <div class="policy-card accent"><div class="policy-icon" data-icon="shield"></div><div><h3>No Hidden Charges</h3><p>Every cost is disclosed upfront — what you approve is what you pay.</p></div></div>
+      <div class="policy-card accent"><div class="policy-icon" data-icon="approve"></div><div><h3>Your Approval Required</h3><p>No repair work is carried out without your explicit approval.</p></div></div>
+      <div class="policy-card"><div class="policy-icon" data-icon="wrench"></div><div><h3>You're In Control</h3><p>You decide whether to proceed after receiving the quotation — no pressure, no obligation.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="/pricing.html" class="btn btn-amber">Request Inspection</a>
     </div>
   </div>
 </section>
@@ -189,7 +210,7 @@
   <div class="container">
     <h2>Don't wait on the shoulder of the road.</h2>
     <p>1200+ verified mechanics are on standby across 38 cities, right now.</p>
-    <a href="tel:+919281410305" class="btn btn-amber">Call +91 92814 10305</a>
+    <button type="button" class="btn btn-amber" data-sos-trigger>Get Emergency Help</button>
   </div>
 </section>
 

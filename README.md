@@ -9,7 +9,7 @@ index.html                     → Home
 services/                      → Body Repair, Brake Repair, Car AC Repair, Engine Diagnostic, Wheel Alignment, Oil Change
 premium/                       → Audi, Mercedes, BMW, Jaguar, Porsche, Bentley, Land Rover, Lexus Repair
 rsa/                            → Battery Jumpstart, Flat Tyre, Instant Car Repair, Key Lockout, Mechanical Fault, Towing
-roadside-package.html          → Membership / pricing plans
+pricing.html                   → Transparent Pricing Policy
 about/                          → About Us, Team, Gallery
 contact.html                   → Contact form
 privacy-policy.html, terms-conditions.html, cancellation-refund-policy.html

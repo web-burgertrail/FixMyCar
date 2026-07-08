@@ -3,92 +3,50 @@ import os
 from build import page, breadcrumb, ROOT
 
 # =================================================================
-# ROADSIDE PACKAGE (membership / pricing)
+# PRICING — Transparent Pricing Policy (no fixed price list)
 # =================================================================
-body = """
+policy_items = [
+    ("inspection", "Doorstep Inspection", "A professional technician inspects your vehicle at your location before any repair is planned."),
+    ("clock", "Visit Fee Applies", "A standard inspection/visit fee applies for every doorstep or roadside call-out."),
+    ("quote", "Detailed Quotation", "After inspection, we share a detailed quotation before starting any work."),
+    ("split-charge", "Labour Charged Separately", "Labour charges are calculated separately based on the repair required."),
+    ("parts", "Spare Parts Billed Separately", "Spare parts used in the repair are charged separately and shown on your quote."),
+    ("shield", "No Hidden Charges", "Every cost is disclosed upfront — what you approve is what you pay."),
+    ("approve", "Your Approval Required", "No repair work is carried out without your explicit approval."),
+    ("wrench", "You're In Control", "You decide whether to proceed after receiving the quotation — no pressure, no obligation."),
+]
+policy_cards = "".join(
+    f'''<div class="policy-card{' accent' if icon in ('shield','approve') else ''}"><div class="policy-icon" data-icon="{icon}"></div><div><h3>{h}</h3><p>{p}</p></div></div>'''
+    for icon, h, p in policy_items
+)
+body = f"""
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow" style="color:#ffb020">Membership</p>
-    <h1>Roadside Package</h1>
-    <p>Annual roadside assistance membership — unlimited SOS call-outs, priority dispatch, and discounted labour on every repair.</p>
+    <p class="eyebrow" style="color:#ffb020">Honest, upfront pricing</p>
+    <h1>Transparent Pricing Policy</h1>
+    <p>Honest pricing with complete transparency before any work begins.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Pick a plan</p>
-      <h2>Membership Plans</h2>
-      <p>All plans include 24×7 RSA dispatch across our network cities.</p>
+    <div class="policy-grid">
+      {policy_cards}
     </div>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Basic</h3>
-        <div class="amount">₹999<span>/year</span></div>
-        <ul>
-          <li>4 RSA call-outs/year</li>
-          <li>Battery jumpstart &amp; flat tyre</li>
-          <li>Standard dispatch priority</li>
-          <li>10% off workshop labour</li>
-        </ul>
-        <a href="/contact.html" class="btn btn-ghost btn-block">Choose Basic</a>
-      </div>
-      <div class="price-card featured">
-        <h3>Family</h3>
-        <div class="amount">₹1,999<span>/year</span></div>
-        <ul>
-          <li>Unlimited RSA call-outs</li>
-          <li>Covers up to 2 vehicles</li>
-          <li>Priority dispatch (avg 18 min)</li>
-          <li>20% off workshop labour</li>
-          <li>Free annual inspection</li>
-        </ul>
-        <a href="/contact.html" class="btn btn-sos btn-block">Choose Family</a>
-      </div>
-      <div class="price-card">
-        <h3>Premium Fleet</h3>
-        <div class="amount">₹4,999<span>/year</span></div>
-        <ul>
-          <li>Unlimited RSA, up to 5 vehicles</li>
-          <li>Dedicated relationship manager</li>
-          <li>Premium car service specialists</li>
-          <li>30% off workshop labour</li>
-          <li>Free pickup &amp; drop</li>
-        </ul>
-        <a href="/contact.html" class="btn btn-ghost btn-block">Choose Premium</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="table-wrap">
-      <table>
-        <caption>PLAN COMPARISON</caption>
-        <thead><tr><th>Feature</th><th>Basic</th><th>Family</th><th>Premium Fleet</th></tr></thead>
-        <tbody>
-          <tr><td>RSA call-outs</td><td>4/year</td><td>Unlimited</td><td>Unlimited</td></tr>
-          <tr><td>Vehicles covered</td><td>1</td><td>2</td><td>5</td></tr>
-          <tr><td>Avg. dispatch time</td><td>25 min</td><td>18 min</td><td>15 min</td></tr>
-          <tr><td>Workshop labour discount</td><td>10%</td><td>20%</td><td>30%</td></tr>
-          <tr><td>Pickup &amp; drop</td><td>—</td><td>Paid</td><td>Free</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="policy-note">No fixed repair prices are listed — every job is quoted after a doorstep inspection, based on your vehicle's actual issue.</div>
   </div>
 </section>
 
 <section class="cta-band">
   <div class="container">
-    <h2>Never face a breakdown alone.</h2>
-    <p>Activate your Roadside Package today — instant coverage.</p>
-    <a href="/contact.html" class="btn btn-amber">Get Started</a>
+    <h2>Get a transparent quote today.</h2>
+    <p>Book a doorstep inspection — no obligation until you approve the quote.</p>
+    <a href="/contact.html" class="btn btn-amber">Request Inspection</a>
   </div>
 </section>
 """
-page("roadside-package.html", "Roadside Package", "FixMyCar annual roadside assistance membership plans — Basic, Family and Premium Fleet.", 0, body,
-     trail=[("Roadside Package", None)])
+page("pricing.html", "Pricing Policy", "FixMyCar's transparent pricing policy — doorstep inspection, detailed quotation, no hidden charges.", 0, body,
+     trail=[("Pricing Policy", None)])
 
 
 # =================================================================
@@ -199,7 +157,7 @@ contact_body = """
               <option>Roadside Assistance (RSA)</option>
               <option>Services (Body/Brake/AC/Engine/etc.)</option>
               <option>Premium Car Service</option>
-              <option>Roadside Package Membership</option>
+              <option>Doorstep Inspection / Quote</option>
               <option>Other</option>
             </select>
           </div>
@@ -264,7 +222,7 @@ legal_page("terms-conditions.html", "Terms &amp; Conditions", "Terms of use for 
 legal_page("cancellation-refund-policy.html", "Cancellation &amp; Refund Policy", "FixMyCar's policy on cancelling a service request and refund eligibility.", "Cancellation &amp; Refund Policy", [
     ("Cancelling a request", "You may cancel a service request free of charge before a mechanic has been dispatched. Cancellations after dispatch may incur a nominal call-out charge."),
     ("Refund eligibility", "Refunds are processed if a service was booked but not delivered due to a fault on FixMyCar's end, within 5-7 business days to the original payment method."),
-    ("Membership refunds", "Roadside Package memberships are refundable on a pro-rata basis within 15 days of purchase, provided no RSA call-out has been used."),
+    ("Inspection fee", "The doorstep inspection/visit fee is non-refundable once a technician has attended, whether or not you choose to proceed with the quoted repair."),
 ])
 
 
@@ -314,15 +272,15 @@ seo_page("roadside-assistance.html", "Roadside Assistance", "FixMyCar roadside a
     "24x7 Emergency Help", "Roadside Assistance, Anytime, Anywhere",
     "From a flat tyre on the highway to a dead battery in a parking lot, FixMyCar's roadside assistance network has you covered around the clock.",
     [("Coverage", "Our RSA network is active across 38 cities and major highways connecting them."),
-     ("Services covered", "Battery jumpstart, flat tyre, key lockout, towing, and on-site mechanical fault diagnosis."),
-     ("Membership option", "Frequent travellers can save with our Roadside Package annual membership for unlimited call-outs.")])
+     ("Services covered", "Battery jumpstart, flat tyre, key lockout, towing, fuel delivery, and on-site mechanical fault diagnosis."),
+     ("Transparent pricing", "Every call-out includes an upfront quote after inspection — no hidden charges, and no work starts without your approval.")])
 
 
 # =================================================================
 # SITEMAP.XML
 # =================================================================
 urls = [
-    "", "roadside-package.html", "contact.html",
+    "", "pricing.html", "contact.html",
     "privacy-policy.html", "terms-conditions.html", "cancellation-refund-policy.html",
     "gadi-kharab.html", "garage-on-road.html", "roadside-assistance.html",
     "about/about-us.html", "about/team.html", "about/gallery.html",

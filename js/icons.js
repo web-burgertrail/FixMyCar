@@ -37,5 +37,25 @@ window.FMC_ICONS = {
 
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
 
-  close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>'
+  close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>',
+
+  fuel: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="20" height="34" rx="2"/><path d="M14 16h8M14 24h8"/><path d="M28 16h4l6 6v14a2.5 2.5 0 0 1-5 0V26l-5-5"/></svg>',
+
+  bike: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="34" r="7"/><circle cx="37" cy="34" r="7"/><path d="M11 34l8-18h9M28 16h6l3 7M19 16l9 18h9M19 16l-4 8"/></svg>',
+
+  "minor-repair": '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M31 9a9 9 0 0 0-12.3 10.6L7 31.3V38h6.7l11.7-11.7A9 9 0 0 0 35.4 16"/><path d="M31 9l6 6-4 4-6-6z"/><circle cx="38" cy="34" r="6"/><path d="M38 31v3l2 2"/></svg>',
+
+  inspection: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="24" height="36" rx="2"/><path d="M16 15h16M16 22h16M16 29h10"/><circle cx="34" cy="34" r="7"/><path d="M39 39l4 4"/></svg>',
+
+  quote: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="26" rx="3"/><path d="M14 20h20M14 27h12"/><path d="M14 36l-4 6v-6"/></svg>',
+
+  "split-charge": '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v36M24 6c-7 4-11 9-11 15s4 11 11 15M24 6c7 4 11 9 11 15s-4 11-11 15"/><path d="M13 21h22M13 27h22"/></svg>',
+
+  parts: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l17 8v18l-17 8-17-8V13z"/><path d="M7 13l17 8 17-8M24 21v18"/></svg>',
+
+  shield: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l16 6v12c0 10-7 17-16 20-9-3-16-10-16-20V11z"/><path d="M17 24l5 5 9-11"/></svg>',
+
+  approve: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="6" width="26" height="34" rx="2"/><path d="M15 16h12M15 23h12M15 30h7"/><circle cx="36" cy="34" r="8" fill="none"/><path d="M32 34l3 3 5-6"/></svg>',
+
+  clock: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 5"/></svg>'
 };

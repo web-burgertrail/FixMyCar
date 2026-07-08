@@ -92,6 +92,60 @@
   }
   window.openServiceForm = openModal;
 
+  /* ---------- SOS quick-contact popup (Call Now / WhatsApp) ---------- */
+  const CALL_NUMBER = "+919281410305";
+  const WA_TEXT = "Hi%20FixMyCar%2C%20I%20need%20roadside%20help.";
+
+  function buildSosModal() {
+    if (document.getElementById("sosModal")) return;
+    const wrap = document.createElement("div");
+    wrap.id = "sosModal";
+    wrap.className = "sos-modal";
+    wrap.innerHTML = `
+      <div class="sos-modal__backdrop" data-sos-close></div>
+      <div class="sos-modal__panel" role="dialog" aria-modal="true" aria-labelledby="sosModalTitle">
+        <button type="button" class="sos-modal__close" data-sos-close aria-label="Close" data-icon="close"></button>
+        <div class="sos-modal__icon" data-icon="phone"></div>
+        <h3 id="sosModalTitle">Need help right now?</h3>
+        <p>Reach our 24×7 dispatch team the way that's easiest for you.</p>
+        <div class="sos-modal__actions">
+          <a class="btn btn-sos" href="tel:${CALL_NUMBER}"><span data-icon="phone" class="btn-icon"></span> Call Now</a>
+          <a class="btn btn-amber" href="https://wa.me/${CALL_NUMBER.replace("+", "")}?text=${WA_TEXT}" target="_blank" rel="noopener"><span data-icon="whatsapp" class="btn-icon"></span> WhatsApp</a>
+        </div>
+      </div>`;
+    document.body.appendChild(wrap);
+    paintIcons(wrap);
+    wrap.querySelectorAll("[data-sos-close]").forEach((el) => el.addEventListener("click", closeSosModal));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeSosModal();
+    });
+  }
+
+  function openSosModal() {
+    buildSosModal();
+    const wrap = document.getElementById("sosModal");
+    wrap.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeSosModal() {
+    const wrap = document.getElementById("sosModal");
+    if (!wrap) return;
+    wrap.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+  window.openSOS = openSosModal;
+
+  function wireSosButtons() {
+    document.querySelectorAll("[data-sos-trigger]").forEach((btn) => {
+      if (btn.dataset.sosWired) return;
+      btn.dataset.sosWired = "1";
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        openSosModal();
+      });
+    });
+  }
+
   /* ---------- Hero typing effect ---------- */
   function startTyping() {
     const words = window.FMC_TYPE_WORDS || [
@@ -166,6 +220,7 @@
     paintIcons(document);
     startTyping();
     initHeroSlider();
+    wireSosButtons();
   };
 
   document.addEventListener("DOMContentLoaded", () => {
