@@ -1,5 +1,5 @@
 /* ============================================================
-   ROADMECH — Design tokens
+   FIXMYCAR — Design tokens
    Concept: 24x7 dispatch board / highway signage.
    Palette: asphalt navy, safety amber, signal red, steel grey.
    Type: Barlow Condensed (signage display) + Inter (body) + JetBrains Mono (dispatch numbers)
@@ -266,6 +266,17 @@ p{margin:0 0 1em;}
 .section-dark .card{background:var(--asphalt-800);border-color:var(--asphalt-600);color:var(--paper-100);}
 .section-dark .card p{color:var(--steel-200);}
 .section-dark .card:hover{border-color:var(--amber-500);}
+
+/* Placeholder images */
+.avatar{
+  width:72px;height:72px;border-radius:50%;object-fit:cover;
+  margin-bottom:14px;border:2px solid var(--amber-500);
+}
+.thumb{
+  width:100%;height:180px;object-fit:cover;border-radius:var(--radius-sm);
+  margin-bottom:16px;border:1px solid #e6e1d6;
+}
+.img-note{font-size:11px;color:var(--steel-400);font-family:var(--font-mono);margin-top:-8px;margin-bottom:14px;}
 
 /* Icon badge */
 .badge{

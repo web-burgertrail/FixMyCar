@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generates every page of the RoadMech static site from shared templates.
+"""Generates every page of the FixMyCar static site from shared templates.
 Run: python3 build.py
 Output pages are written directly into the site folders (services/, rsa/, premium/, about/, root).
 """
@@ -12,7 +12,7 @@ HEAD = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} | RoadMech</title>
+<title>{title} | FixMyCar</title>
 <meta name="description" content="{desc}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -91,8 +91,8 @@ def detail_page(path, depth, section_label, section_href, name, rt_code,
     <aside class="side-card">
       <p class="eyebrow" style="color:#ffb020">Dispatch status</p>
       <h3>{eta} avg. arrival</h3>
-      <p>Verified mechanic dispatched from the nearest RoadMech garage. Live tracking link sent by SMS. Starting at <strong style="color:#fff">{price_from}</strong>.</p>
-      <a href="tel:+911800123456" class="btn btn-sos btn-block">📞 Request {name}</a>
+      <p>Verified mechanic dispatched from the nearest FixMyCar garage. Live tracking link sent by SMS. Starting at <strong style="color:#fff">{price_from}</strong>.</p>
+      <a href="tel:+911800266990" class="btn btn-sos btn-block">📞 Request {name}</a>
       <a href="{root}contact.html" class="btn btn-ghost btn-block" style="margin-top:10px;">Get a Quote</a>
     </aside>
   </div>
@@ -114,7 +114,7 @@ def detail_page(path, depth, section_label, section_href, name, rt_code,
   <div class="container">
     <h2>Stuck on the road right now?</h2>
     <p>Our nearest mechanic is already on standby.</p>
-    <a href="tel:+911800123456" class="btn btn-amber">📞 Call 1800-123-456</a>
+    <a href="tel:+911800266990" class="btn btn-amber">📞 Call 1800-266-9900</a>
   </div>
 </section>
 """
@@ -226,7 +226,7 @@ rsa_services = [
      ["On-site mechanical diagnosis", "Belt, hose and clamp fixes", "Coolant/oil leak temporary fix", "Tow arrangement if not fixable on-site"],
      ["Engine overheating", "Unusual smell or smoke", "Loss of power while driving"]),
     ("Towing Services", "towing-services.html", "SOS-06",
-     "Flatbed towing to your preferred garage or our nearest RoadMech service centre.",
+     "Flatbed towing to your preferred garage or our nearest FixMyCar service centre.",
      ["Flatbed towing (no drag damage)", "Accident vehicle recovery", "Long-distance towing available", "GPS-tracked tow truck"],
      ["Accident or major breakdown", "Vehicle won't start after diagnostics", "Need to move car to a specific garage"]),
 ]

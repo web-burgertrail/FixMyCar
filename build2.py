@@ -87,7 +87,7 @@ body = """
   </div>
 </section>
 """
-page("roadside-package.html", "Roadside Package", "RoadMech annual roadside assistance membership plans — Basic, Family and Premium Fleet.", 0, body,
+page("roadside-package.html", "Roadside Package", "FixMyCar annual roadside assistance membership plans — Basic, Family and Premium Fleet.", 0, body,
      trail=[("Roadside Package", None)])
 
 
@@ -98,15 +98,15 @@ about_body = """
 <section class="page-hero">
   <div class="container">
     <p class="eyebrow" style="color:#ffb020">Since 2018</p>
-    <h1>About RoadMech</h1>
-    <p>We built RoadMech because breakdowns don't wait for business hours — and neither do we.</p>
+    <h1>About FixMyCar</h1>
+    <p>We built FixMyCar because breakdowns don't wait for business hours — and neither do we.</p>
   </div>
 </section>
 <section class="section">
   <div class="container content-grid">
     <div class="prose">
       <h2>Our story</h2>
-      <p>RoadMech started as a two-mechanic helpline for a single neighbourhood. Today, our network covers 38 cities with over 1,200 verified mechanics, dispatched through one simple call or tap.</p>
+      <p>FixMyCar started as a two-mechanic helpline for a single neighbourhood. Today, our network covers 38 cities with over 1,200 verified mechanics, dispatched through one simple call or tap.</p>
       <h2>What we stand for</h2>
       <ul>
         <li>Verified mechanics — background-checked and skill-tested</li>
@@ -123,7 +123,7 @@ about_body = """
   </div>
 </section>
 """
-page("about/about-us.html", "About Us", "RoadMech's story, mission and coverage — 24x7 roadside assistance across 38 cities.", 1, about_body,
+page("about/about-us.html", "About Us", "FixMyCar's story, mission and coverage — 24x7 roadside assistance across 38 cities.", 1, about_body,
      trail=[("About", None), ("About Us", None)])
 
 team_body = """
@@ -147,7 +147,7 @@ team_body = """
   </div>
 </section>
 """
-page("about/team.html", "Team", "Meet the RoadMech team running our 24x7 roadside assistance and repair network.", 1, team_body,
+page("about/team.html", "Team", "Meet the FixMyCar team running our 24x7 roadside assistance and repair network.", 1, team_body,
      trail=[("About", None), ("Team", None)])
 
 gallery_body = """
@@ -169,7 +169,7 @@ gallery_body = """
   </div>
 </section>
 """
-page("about/gallery.html", "Gallery", "Photos of RoadMech's garages, mobile repair vans and towing fleet.", 1, gallery_body,
+page("about/gallery.html", "Gallery", "Photos of FixMyCar's garages, mobile repair vans and towing fleet.", 1, gallery_body,
      trail=[("About", None), ("Gallery", None)])
 
 
@@ -214,14 +214,14 @@ contact_body = """
     <aside class="side-card">
       <h3>Prefer to call?</h3>
       <p>Our 24×7 helpline connects you directly to dispatch.</p>
-      <a href="tel:+911800123456" class="btn btn-amber btn-block">📞 1800-123-456</a>
+      <a href="tel:+911800266990" class="btn btn-amber btn-block">📞 1800-266-9900</a>
       <p style="margin-top:18px;">Garage or mechanic wanting to join our network?</p>
-      <a href="https://road-mech24.com/join-network" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Join RoadMech Network</a>
+      <a href="https://fixmycar24.com/join-network" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Join FixMyCar Network</a>
     </aside>
   </div>
 </section>
 """
-page("contact.html", "Contact Us", "Contact RoadMech for bookings, roadside assistance, or partnership enquiries — 24x7 helpline available.", 0, contact_body,
+page("contact.html", "Contact Us", "Contact FixMyCar for bookings, roadside assistance, or partnership enquiries — 24x7 helpline available.", 0, contact_body,
      trail=[("Contact Us", None)])
 
 
@@ -247,23 +247,23 @@ def legal_page(path, title, desc, heading, sections):
 """
     page(path, title, desc, 0, body, trail=[(title, None)])
 
-legal_page("privacy-policy.html", "Privacy Policy", "How RoadMech collects, uses and protects your personal data.", "Privacy Policy", [
+legal_page("privacy-policy.html", "Privacy Policy", "How FixMyCar collects, uses and protects your personal data.", "Privacy Policy", [
     ("Information we collect", "We collect your name, phone number, location and vehicle details when you request a service, to dispatch the nearest mechanic and keep you updated on arrival status."),
     ("How we use your information", "Your information is used solely to fulfil service requests, process payments, and improve our dispatch network. We do not sell your data to third parties."),
     ("Data security", "All customer data is stored on encrypted servers with restricted access limited to authorised dispatch and support staff."),
     ("Your rights", "You may request access to, correction of, or deletion of your personal data at any time by contacting our support team."),
 ])
 
-legal_page("terms-conditions.html", "Terms &amp; Conditions", "Terms of use for booking RoadMech's car repair and roadside assistance services.", "Terms &amp; Conditions", [
-    ("Service availability", "RoadMech facilitates connections between customers and independent verified mechanics and garages. Arrival times are estimates and may vary due to traffic, weather or location accessibility."),
+legal_page("terms-conditions.html", "Terms &amp; Conditions", "Terms of use for booking FixMyCar's car repair and roadside assistance services.", "Terms &amp; Conditions", [
+    ("Service availability", "FixMyCar facilitates connections between customers and independent verified mechanics and garages. Arrival times are estimates and may vary due to traffic, weather or location accessibility."),
     ("Pricing", "All service prices are shared as an estimate before work begins. Final billing may vary based on additional parts or labour required, with customer consent."),
     ("Customer responsibilities", "Customers must provide accurate location and vehicle details to enable timely dispatch."),
-    ("Limitation of liability", "RoadMech is not liable for pre-existing vehicle damage discovered during service, or for delays caused by circumstances beyond our control."),
+    ("Limitation of liability", "FixMyCar is not liable for pre-existing vehicle damage discovered during service, or for delays caused by circumstances beyond our control."),
 ])
 
-legal_page("cancellation-refund-policy.html", "Cancellation &amp; Refund Policy", "RoadMech's policy on cancelling a service request and refund eligibility.", "Cancellation &amp; Refund Policy", [
+legal_page("cancellation-refund-policy.html", "Cancellation &amp; Refund Policy", "FixMyCar's policy on cancelling a service request and refund eligibility.", "Cancellation &amp; Refund Policy", [
     ("Cancelling a request", "You may cancel a service request free of charge before a mechanic has been dispatched. Cancellations after dispatch may incur a nominal call-out charge."),
-    ("Refund eligibility", "Refunds are processed if a service was booked but not delivered due to a fault on RoadMech's end, within 5-7 business days to the original payment method."),
+    ("Refund eligibility", "Refunds are processed if a service was booked but not delivered due to a fault on FixMyCar's end, within 5-7 business days to the original payment method."),
     ("Membership refunds", "Roadside Package memberships are refundable on a pro-rata basis within 15 days of purchase, provided no RSA call-out has been used."),
 ])
 
@@ -271,7 +271,7 @@ legal_page("cancellation-refund-policy.html", "Cancellation &amp; Refund Policy"
 # =================================================================
 # SEO LANDING PAGES (footer-only / hidden pages)
 # =================================================================
-def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call 1800-123-456"):
+def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call 1800-266-9900"):
     prose = "".join(f"<h2>{h}</h2><p>{p}</p>" for h, p in sections)
     body = f"""
 <section class="page-hero">
@@ -291,15 +291,15 @@ def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call
 <section class="cta-band">
   <div class="container">
     <h2>Help is one call away.</h2>
-    <a href="tel:+911800123456" class="btn btn-amber">📞 {cta_text}</a>
+    <a href="tel:+911800266990" class="btn btn-amber">📞 {cta_text}</a>
   </div>
 </section>
 """
     page(path, title, desc, 0, body, trail=[(title, None)])
 
-seo_page("gadi-kharab.html", "Gadi Kharab? 24x7 Madad", "Gadi kharab ho gayi? RoadMech se turant 24x7 roadside assistance aur mechanic madad payein.",
+seo_page("gadi-kharab.html", "Gadi Kharab? 24x7 Madad", "Gadi kharab ho gayi? FixMyCar se turant 24x7 roadside assistance aur mechanic madad payein.",
     "Hindi Local Help", "Gadi Kharab Ho Gayi? Hum Yahan Hain",
-    "Raste mein gadi kharab ho jaaye to ghabraye nahi — RoadMech ka verified mechanic aapki location par turant pahunchta hai.",
+    "Raste mein gadi kharab ho jaaye to ghabraye nahi — FixMyCar ka verified mechanic aapki location par turant pahunchta hai.",
     [("Kya kya madad milegi?", "Battery jumpstart, flat tyre, towing, aur chhoti-moti mechanical kharabi — sab kuch ek call par."),
      ("Kitni der mein mechanic aayega?", "Zyadatar shehron mein average 20-25 minute mein mechanic dispatch ho jaata hai."),
      ("Payment kaise hoga?", "Kaam shuru hone se pehle price bataya jaata hai, koi hidden charge nahi.")])
@@ -310,9 +310,9 @@ seo_page("garage-on-road.html", "Garage On-Road — Mobile Car Repair", "On-road
     [("What can be fixed on-road?", "Battery, tyre, minor mechanical faults, fluid top-ups and basic diagnostics can usually be handled without towing."),
      ("When is towing still needed?", "Major engine, transmission or accident damage is towed to the nearest partner garage for a full repair.")])
 
-seo_page("roadside-assistance.html", "Roadside Assistance", "RoadMech roadside assistance — 24x7 emergency help for battery, tyre, towing and lockouts across India.",
+seo_page("roadside-assistance.html", "Roadside Assistance", "FixMyCar roadside assistance — 24x7 emergency help for battery, tyre, towing and lockouts across India.",
     "24x7 Emergency Help", "Roadside Assistance, Anytime, Anywhere",
-    "From a flat tyre on the highway to a dead battery in a parking lot, RoadMech's roadside assistance network has you covered around the clock.",
+    "From a flat tyre on the highway to a dead battery in a parking lot, FixMyCar's roadside assistance network has you covered around the clock.",
     [("Coverage", "Our RSA network is active across 38 cities and major highways connecting them."),
      ("Services covered", "Battery jumpstart, flat tyre, key lockout, towing, and on-site mechanical fault diagnosis."),
      ("Membership option", "Frequent travellers can save with our Roadside Package annual membership for unlimited call-outs.")])
@@ -330,7 +330,7 @@ urls = [
   + [f"premium/{h}" for h in ["audi-repair.html","mercedes-repair.html","bmw-repair.html","jaguar-repair.html","porsche-repair.html","bentley-repair.html","land-rover-repair.html","lexus-repair.html"]] \
   + [f"rsa/{h}" for h in ["battery-jumpstart.html","flat-tyre.html","instant-car-repair.html","key-lockout.html","mechanical-fault.html","towing-services.html"]]
 
-BASE_URL = "https://www.roadmech-example.com"
+BASE_URL = "https://www.fixmycar-example.com"
 entries = "\n".join(
     f'  <url><loc>{BASE_URL}/{u}</loc></url>' for u in urls
 )

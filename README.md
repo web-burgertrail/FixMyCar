@@ -1,4 +1,4 @@
-# RoadMech — Roadside Assistance & Car Repair Website
+# FixMyCar — Roadside Assistance & Car Repair Website
 
 Pure static website (HTML + CSS + JS, koi build step nahi) — seedhe GitHub se Vercel par deploy ho jaayegi.
 
@@ -21,7 +21,7 @@ js/main.js, js/include.js      → Nav dropdowns, mobile menu, partial includes
 build.py, build2.py            → Python generator scripts used to create all pages (optional, for future edits)
 ```
 
-**Login** aur **Join RoadMech Network** links abhi `https://road-mech24.com/login` aur `/join-network` (external subdomain) par point karte hain — apna actual customer-portal/partner-portal URL daalne ke liye `partials/header.html` aur `partials/footer.html` mein edit karein.
+**Login** aur **Join FixMyCar Network** links abhi `https://fixmycar24.com/login` aur `/join-network` (external subdomain) par point karte hain — apna actual customer-portal/partner-portal URL daalne ke liye `partials/header.html` aur `partials/footer.html` mein edit karein.
 
 ## Local preview
 
@@ -35,7 +35,7 @@ python3 -m http.server 8000
 ```bash
 git init
 git add .
-git commit -m "Initial RoadMech website"
+git commit -m "Initial FixMyCar website"
 git branch -M main
 git remote add origin https://github.com/<your-username>/<your-repo>.git
 git push -u origin main
