@@ -24,6 +24,8 @@ HEAD = """<!DOCTYPE html>
 
 FOOT = """
 <div id="site-footer"></div>
+<script src="{root}js/icons.js"></script>
+<script src="{root}js/app.js"></script>
 <script src="{root}js/main.js"></script>
 <script src="{root}js/include.js"></script>
 </body>
