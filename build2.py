@@ -172,7 +172,7 @@ contact_body = """
     <aside class="side-card">
       <h3>Prefer to call?</h3>
       <p>Our 24×7 helpline connects you directly to dispatch.</p>
-      <a href="tel:+911800266990" class="btn btn-amber btn-block">📞 1800-266-9900</a>
+      <a href="tel:+919642268773" class="btn btn-amber btn-block">📞 +91 96422 68773</a>
       <p style="margin-top:18px;">Garage or mechanic wanting to join our network?</p>
       <a href="https://fixmycar24.com/join-network" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Join FixMyCar Network</a>
     </aside>
@@ -229,7 +229,7 @@ legal_page("cancellation-refund-policy.html", "Cancellation &amp; Refund Policy"
 # =================================================================
 # SEO LANDING PAGES (footer-only / hidden pages)
 # =================================================================
-def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call 1800-266-9900"):
+def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call +91 96422 68773"):
     prose = "".join(f"<h2>{h}</h2><p>{p}</p>" for h, p in sections)
     body = f"""
 <section class="page-hero">
@@ -249,7 +249,7 @@ def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call
 <section class="cta-band">
   <div class="container">
     <h2>Help is one call away.</h2>
-    <a href="tel:+911800266990" class="btn btn-amber">📞 {cta_text}</a>
+    <a href="tel:+919642268773" class="btn btn-amber">📞 {cta_text}</a>
   </div>
 </section>
 """
@@ -288,7 +288,7 @@ urls = [
   + [f"premium/{h}" for h in ["audi-repair.html","mercedes-repair.html","bmw-repair.html","jaguar-repair.html","porsche-repair.html","bentley-repair.html","land-rover-repair.html","lexus-repair.html"]] \
   + [f"rsa/{h}" for h in ["battery-jumpstart.html","flat-tyre.html","instant-car-repair.html","key-lockout.html","mechanical-fault.html","towing-services.html"]]
 
-BASE_URL = "https://www.fixmycar-example.com"
+BASE_URL = "https://www.fixmycarhub.in"
 entries = "\n".join(
     f'  <url><loc>{BASE_URL}/{u}</loc></url>' for u in urls
 )

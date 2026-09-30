@@ -94,7 +94,7 @@ def detail_page(path, depth, section_label, section_href, name, rt_code,
       <p class="eyebrow" style="color:#ffb020">Dispatch status</p>
       <h3>{eta} avg. arrival</h3>
       <p>Verified mechanic dispatched from the nearest FixMyCar garage. Live tracking link sent by SMS. Starting at <strong style="color:#fff">{price_from}</strong>.</p>
-      <a href="tel:+911800266990" class="btn btn-sos btn-block">📞 Request {name}</a>
+      <a href="tel:+919642268773" class="btn btn-sos btn-block">📞 Request {name}</a>
       <a href="{root}contact.html" class="btn btn-ghost btn-block" style="margin-top:10px;">Get a Quote</a>
     </aside>
   </div>
@@ -116,7 +116,7 @@ def detail_page(path, depth, section_label, section_href, name, rt_code,
   <div class="container">
     <h2>Stuck on the road right now?</h2>
     <p>Our nearest mechanic is already on standby.</p>
-    <a href="tel:+911800266990" class="btn btn-amber">📞 Call 1800-266-9900</a>
+    <a href="tel:+919642268773" class="btn btn-amber">📞 Call +91 96422 68773</a>
   </div>
 </section>
 """

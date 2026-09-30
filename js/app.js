@@ -1,6 +1,6 @@
 /* FixMyCar — icons, service-request modal (-> WhatsApp), hero slider, typing effect. */
 (function () {
-  const WA_NUMBER = "919281410305";
+  const WA_NUMBER = "919642268773";
 
   /* ---------- Inject SVG icons wherever [data-icon] is used ---------- */
   function paintIcons(root) {
@@ -93,7 +93,7 @@
   window.openServiceForm = openModal;
 
   /* ---------- SOS quick-contact popup (Call Now / WhatsApp) ---------- */
-  const CALL_NUMBER = "+919281410305";
+  const CALL_NUMBER = "+919642268773";
   const WA_TEXT = "Hi%20FixMyCar%2C%20I%20need%20roadside%20help.";
 
   function buildSosModal() {
