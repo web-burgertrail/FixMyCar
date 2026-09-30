@@ -12,8 +12,9 @@ HEAD = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} | FixMyCar</title>
+<title>{title} | FixMyCar Hyderabad</title>
 <meta name="description" content="{desc}">
+<link rel="canonical" href="https://www.fixmycarhub.in/{path}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{root}css/style.css">
@@ -46,7 +47,7 @@ def breadcrumb(root, trail):
 
 def page(path, title, desc, depth, body, trail=None):
     root = "../" * depth if depth else "./"
-    html = HEAD.format(title=title, desc=desc, depth=depth, root=root)
+    html = HEAD.format(title=title, desc=desc, depth=depth, root=root, path=path)
     if trail is not None:
         html += breadcrumb(root, trail)
     html += body
@@ -235,6 +236,8 @@ rsa_services = [
 rsa_related_pool = [(n, href, rt) for n, href, rt, *_ in rsa_services]
 
 for name, href, rt, tag, includes, issues in rsa_services:
+    if href == "battery-jumpstart.html":
+        continue  # Preserved as rich custom Hyderabad landing page with Schema and FAQPage
     faqs = [("How fast can you reach me?", "Average arrival time is 20-30 minutes in city areas, depending on traffic and your location."),
             ("Is this available at night?", "Yes, all RSA services run 24×7, including highways and outstation routes.")]
     related = [(r[0], "rsa/" + r[1], r[2], "24×7 roadside help") for r in rsa_related_pool if r[1] != href][:3]

@@ -64,7 +64,7 @@ about_body = """
   <div class="container content-grid">
     <div class="prose">
       <h2>Our story</h2>
-      <p>FixMyCar started as a two-mechanic helpline for a single neighbourhood. Today, our network covers 38 cities with over 1,200 verified mechanics, dispatched through one simple call or tap.</p>
+      <p>FixMyCar started as an emergency roadside helpline for Hyderabad motorists. Today, our mobile mechanic network covers all of Hyderabad, the Outer Ring Road (ORR), and connecting national highways on a 24×7 standby, dispatched through one simple call or tap.</p>
       <h2>What we stand for</h2>
       <ul>
         <li>Verified mechanics — background-checked and skill-tested</li>
@@ -81,7 +81,7 @@ about_body = """
   </div>
 </section>
 """
-page("about/about-us.html", "About Us", "FixMyCar's story, mission and coverage — 24x7 roadside assistance across 38 cities.", 1, about_body,
+page("about/about-us.html", "About Us", "FixMyCar's story, mission and coverage — 24x7 roadside assistance across Hyderabad & highways.", 1, about_body,
      trail=[("About", None), ("About Us", None)])
 
 team_body = """
@@ -97,7 +97,7 @@ team_body = """
     <div class="grid">
       <div class="card"><span class="rt">FOUNDER</span><h3>Rakesh Sharma</h3><p>Co-founder &amp; CEO — 15 years in automotive service operations.</p></div>
       <div class="card"><span class="rt">CO-FOUNDER</span><h3>Anita Verma</h3><p>Co-founder &amp; Head of Network — built the mechanic verification program.</p></div>
-      <div class="card"><span class="rt">OPS</span><h3>Imran Khan</h3><p>Head of Dispatch — manages live routing across all 38 cities.</p></div>
+      <div class="card"><span class="rt">OPS</span><h3>Imran Khan</h3><p>Head of Dispatch — manages live routing across Hyderabad &amp; highways.</p></div>
       <div class="card"><span class="rt">TECH</span><h3>Priya Nair</h3><p>Lead, Master Technician Panel — oversees premium car service quality.</p></div>
       <div class="card"><span class="rt">SUPPORT</span><h3>Deepak Rao</h3><p>Customer Support Lead — runs the 24×7 helpline desk.</p></div>
       <div class="card"><span class="rt">QUALITY</span><h3>Sana Sheikh</h3><p>Quality Assurance — audits mechanic jobs and customer feedback.</p></div>
@@ -255,25 +255,25 @@ def seo_page(path, title, desc, eyebrow, heading, lead, sections, cta_text="Call
 """
     page(path, title, desc, 0, body, trail=[(title, None)])
 
-seo_page("gadi-kharab.html", "Gadi Kharab? 24x7 Madad", "Gadi kharab ho gayi? FixMyCar se turant 24x7 roadside assistance aur mechanic madad payein.",
+seo_page("gadi-kharab.html", "Gadi Kharab? 24x7 Hyderabad Madad", "Hyderabad mein raste ya highway par gadi kharab ho gayi ya battery dead ho gayi? FixMyCar verified mechanic 20 minute mein dispatch. Call +91 96422 68773.",
     "Hindi Local Help", "Gadi Kharab Ho Gayi? Hum Yahan Hain",
-    "Raste mein gadi kharab ho jaaye to ghabraye nahi — FixMyCar ka verified mechanic aapki location par turant pahunchta hai.",
-    [("Kya kya madad milegi?", "Battery jumpstart, flat tyre, towing, aur chhoti-moti mechanical kharabi — sab kuch ek call par."),
-     ("Kitni der mein mechanic aayega?", "Zyadatar shehron mein average 20-25 minute mein mechanic dispatch ho jaata hai."),
-     ("Payment kaise hoga?", "Kaam shuru hone se pehle price bataya jaata hai, koi hidden charge nahi.")])
+    "Hyderabad ya Outer Ring Road (ORR) par gadi kharab ho jaaye ya battery dead ho jaaye to tension na lein — FixMyCar ka verified mechanic turant pahunchta hai.",
+    [("Kya kya madad milegi?", "Car battery jumpstart, flat tyre replacement, towing, fuel delivery aur on-road mechanical kharabi — sab kuch ek call par."),
+     ("Kitni der mein mechanic aayega?", "Poore Hyderabad, Outer Ring Road (ORR), PVNR Expressway aur connecting highways par average 20-25 minute mein nearest mechanic dispatch ho jaata hai."),
+     ("Payment kaise hoga?", "Kaam shuru hone se pehle price bataya jaata hai (battery jumpstart starting ₹299), koi hidden charge nahi.")])
 
-seo_page("garage-on-road.html", "Garage On-Road — Mobile Car Repair", "On-road mobile garage service — mechanic reaches your car's location for instant repair, no towing needed.",
-    "Mobile Garage", "Garage On-Road, Wherever You Are",
-    "Why tow your car to a garage when the garage can come to you? Our mobile mechanics carry the tools for most on-site repairs.",
-    [("What can be fixed on-road?", "Battery, tyre, minor mechanical faults, fluid top-ups and basic diagnostics can usually be handled without towing."),
-     ("When is towing still needed?", "Major engine, transmission or accident damage is towed to the nearest partner garage for a full repair.")])
+seo_page("garage-on-road.html", "Garage On-Road — Mobile Car Repair Hyderabad", "On-road mobile garage service in Hyderabad — mechanic reaches your car's location for instant repair, no towing needed.",
+    "Mobile Garage", "Garage On-Road, Wherever You Are in Hyderabad",
+    "Why tow your car across Hyderabad when the garage can come to you? Our mobile mechanics carry the tools and diagnostic equipment for on-site repairs.",
+    [("What can be fixed on-road?", "Battery jumpstart, tyre puncture, minor mechanical faults, fluid top-ups and basic diagnostics can usually be handled on the spot."),
+     ("When is towing still needed?", "Major engine, transmission or accident damage is safely towed via flatbed to our workshop or your preferred garage.")])
 
-seo_page("roadside-assistance.html", "Roadside Assistance", "FixMyCar roadside assistance — 24x7 emergency help for battery, tyre, towing and lockouts across India.",
-    "24x7 Emergency Help", "Roadside Assistance, Anytime, Anywhere",
-    "From a flat tyre on the highway to a dead battery in a parking lot, FixMyCar's roadside assistance network has you covered around the clock.",
-    [("Coverage", "Our RSA network is active across 38 cities and major highways connecting them."),
-     ("Services covered", "Battery jumpstart, flat tyre, key lockout, towing, fuel delivery, and on-site mechanical fault diagnosis."),
-     ("Transparent pricing", "Every call-out includes an upfront quote after inspection — no hidden charges, and no work starts without your approval.")])
+seo_page("roadside-assistance.html", "24x7 Roadside Assistance in Hyderabad & Highways", "FixMyCar roadside assistance — 24x7 emergency help for battery, tyre, towing and mobile mechanics across Hyderabad & ORR.",
+    "24x7 Emergency Help", "Roadside Assistance Hyderabad & Highways",
+    "From a flat tyre or dead battery on the Outer Ring Road to a breakdown anywhere in Hyderabad, FixMyCar's roadside assistance network has you covered around the clock.",
+    [("Coverage", "Our RSA units are active 24/7 across Hyderabad city, all 19 exits of Outer Ring Road (ORR), PVNR Expressway, and NH-44/NH-65."),
+     ("Services covered", "Car battery jumpstart, flat tyre replacement, key lockout, towing, fuel delivery, and on-site mechanical fault diagnosis."),
+     ("Transparent pricing", "Every call-out includes an upfront quote after inspection — starting from ₹299 for battery jumpstart. No hidden charges.")])
 
 
 # =================================================================
